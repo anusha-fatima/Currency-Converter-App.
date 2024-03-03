@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "Tektur";
+  src: url(https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300;1,200&family=Roboto:wght@300&family=Tektur&display=swap);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Tektur";
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7cbcb;
+  padding: 9rem;
+  min-height: 100%;
+}
+.main {
+  background-color: #c88ea7;
+  border-radius: 2rem;
+  padding: 2rem;
+  min-height: 55vh;
+  width: 50vh;
+  box-shadow: 12px 25px 35px #99627a;
+}
+.main h1 {
+  color: #643843;
+  font-weight: 700;
+}
+.amount p {
+  color: #643843;
+  font-size: 1.25rem;
+}
+form {
+  margin: 2rem 0 1rem 0;
+}
+form select,
+button,
+input {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+}
+form input {
+  background: #e7cbcb;
+  border: 2px solid #e7cbcb;
+  color: #99627a;
+  font-weight: 700;
+  font-size: 1rem;
+  height: 2rem;
+  padding-left: 0.3rem;
+}
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+.To p {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #e7cbcb;
+}
+.From p {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #e7cbcb;
+}
+img {
+  max-width: 2rem;
+}
+.selection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  border-radius: 0.75rem;
+  border: 1px solid #643843;
+}
+.dropdown i {
+  font-size: 2rem;
+  margin: 1rem;
+  color: #643843;
+}
+.selection select {
+  width: auto;
+  font-size: 1rem;
+  background: #c88ea7;
+  color: #643843;
+  font-weight: 700;
+}
+.msg {
+  margin: 2rem 0 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.65rem;
+  font-weight: 800;
+  color: #4f2832;
+}
+button {
+  height: 3rem;
+  background: #99627a;
+  color: #e7cbcb;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+
