@@ -1,5 +1,5 @@
 const Base_URL =
-  "https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies";  //This Api isn't updated so it will not show you updated exchange rate.
+  "https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies";  //This Api isn't updated so it will not show you updated exchange rate.
 const dropdowns = document.querySelectorAll(".dropdown select");
 const btn = document.querySelector("form button");
 const fromCurr = document.querySelector(".From select");
@@ -14,10 +14,10 @@ const updatedRate = async () => {
     amount.value = "1";
   }
 
-  const URL = `${Base_URL}/${fromCurr.value.toLowerCase()}/${toCurr.value.toLowerCase()}.json`;
+  const URL = `${Base_URL}/${fromCurr.value.toLowerCase()}.json`;
   let response = await fetch(URL);
   let data = await response.json();
-  let rate = data[toCurr.value.toLowerCase()];
+  let rate = data[fromCurr.value.toLowerCase()][toCurr.value.toLowerCase()];
 
   let finalAmt = amtVal * rate;
   msg.innerHTML = `${amtVal} ${fromCurr.value} = ${finalAmt} ${toCurr.value}`;
